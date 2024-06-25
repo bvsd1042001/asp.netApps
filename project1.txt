@@ -1,0 +1,89 @@
+<%@ Page Language="C#" AutoEventWireup="true" CodeFile="SimpleLearn.aspx.cs" Inherits="SimpleLearn" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title></title>
+    
+</head>
+<body>
+    <form id="form1" runat="server">
+        <div>
+           
+            <a href="https://www.simplilearn.com/" style="text-decoration:none;">Home></a> <a href="https://www.simplilearn.com/agile-and-scrum" style="text-decoration:none;">Agile and Scrum</a> Certified ScrumMaster® (CSM)
+            <h1>Certified ScrumMaster (CSM) Certification Training</h1>
+            <h2>Best Rated Certified Scrum Master Certification</h2>
+           
+            <style>
+        .checklist {
+            list-style: none;
+            padding-left: 0;
+        }
+
+        .checklist li {
+            display: flex;
+            align-items: center;
+            margin-bottom: 10px;
+            font-family: Arial, sans-serif;
+        }
+
+        .checklist li::before {
+            content: '\2714'; /* Unicode character for checkmark */
+            color: green;
+            margin-right: 10px;
+            font-size: 1.2em;
+        }
+    </style>
+            
+            <ul class="checklist">
+                <list >CSM Certification Exam Pass Guaranteed on 1st Attempt</list>
+                <li>Guaranteed to Run 20+ Live Cohorts in a month</li>
+                <li>Gain complimentary access to Agile and Scrum courses worth $500</li>
+                <li>Two-year membership with Scrum Alliance® included</li>
+                <li>Earn 20 PDUs and 16 SEUs | Exam fee included</li>
+            </ul>
+          
+           <img src="img/poster.jpeg" alt="scrum and agile life cycle" style="width: 300px; height:150px; border: 1px solid #ccc; float: right;"/>
+        </div>
+        <div>
+            <button type="button" style="background-color:#117AEF;color:white; width:150px; height:q50px; font-size:16px;" >View Schedules</button>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <button type="button" style="background-color:white; color:#117AEF; width:150px; height:50px; font-size:16px;">Talk to our advisor</button>
+        </div>
+        <h3>Want to Train your team? :<a href="">Get a quote</a></h3>
+        <h3>Global REA of Scrum Alliance</h3>
+        <h1>CSM Certification Course Overview</h1>
+        <p>Elevate your career as a sought-after Certified Scrum Master through immersive training by globally renowned CSTs.
+           Uncover Scrum's secrets, enhance teamwork, transparency, and results with CSM certification. Get expert coaching,
+           ace the CSM exam, and propel your career to new heights—unlock higher salaries and discover exciting opportunities!</p>
+        <h1>Key Features</h1>
+        <div>
+             <ul class="checklist">
+                <li>16 hours of live training by globally renowned Certified Scrum Trainers (CSTs)</li>
+                <li>Hands-on learning through games, role-plays, simulations, and case studies</li>
+                <li>Earn a Scrum Alliance certificate with two-year membership</li>
+                <li>Certified ScrumMaster® exam fee included along with a free exam retake</li>
+                <li>16 SEUs and 20 PDUs for your CSM certification</li>
+                 <li>Complimentary access to 15 value addition courses worth $500 | 2 Mock Test Papers</li>
+             </ul>
+                <h1>Skills Covered</h1>
+                <ul class="checklist">
+                    <li>Scrum and Agile Methodologies</li>
+                    <li>Daily Scrum and Review</li>
+                    <li>Importance of Agile</li>
+                    <li>Roles involved in Scrum</li>
+                    <li>Scrum Lifecycle</li>
+                    <li>Distributed Scrum</li>
+                    <li>Scrum Terminologies</li>
+                </ul>
+        </div>
+        <div>
+            <h1>Benefits</h1>
+            <p>Certified ScrumMasters® demonstrate the accomplishment of core Scrum knowledge to employers and are highly-valued
+               across industries since they have verifiable skills. CSM professionals gain access to local groups, networks, and
+               resources available only to Scrum Alliance members.</p>
+        </div>
+        
+    </form>
+</body>
+</html>

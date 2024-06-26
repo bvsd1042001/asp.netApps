@@ -5,85 +5,380 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
     <title></title>
-    
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <form id="form1" runat="server">
-        <div>
-           
-            <a href="https://www.simplilearn.com/" style="text-decoration:none;">Home></a> <a href="https://www.simplilearn.com/agile-and-scrum" style="text-decoration:none;">Agile and Scrum</a> Certified ScrumMaster® (CSM)
-            <h1>Certified ScrumMaster (CSM) Certification Training</h1>
-            <h2>Best Rated Certified Scrum Master Certification</h2>
-           
-            <style>
-        .checklist {
-            list-style: none;
-            padding-left: 0;
-        }
 
-        .checklist li {
+
+        <style>
+            /* Basic reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f7f7f7;
+    color: #333;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.main-content {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.main-content h1 {
+    font-size: 2em;
+    color: #222;
+    margin-bottom: 10px;
+}
+
+.main-content p {
+    font-size: 1.2em;
+    color: #666;
+    margin-bottom: 20px;
+}
+
+.content-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.left-column, .right-column {
+    flex: 1;
+    width: 50%;
+    text-align: left;
+}
+
+.left-column ul {
+    list-style: none;
+    margin-bottom: 20px;
+}
+
+.left-column ul li {
+    font-size: 1.2em;
+    margin: 10px 0;
+    color: #555;
+}
+
+.left-column ul li::before {
+    content: '✔';
+    color: green;
+    margin-right: 10px;
+}
+
+.button-group {
+    display: flex;
+    justify-content: flex-start;
+    margin-bottom: 20px;
+}
+
+.button-group .btn {
+    display: inline-block;
+    padding: 10px 20px;
+    margin-right: 10px;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 1em;
+    color: #fff;
+    background-color: #007bff;
+    transition: background-color 0.3s;
+}
+
+.button-group .btn:hover {
+    background-color: #0056b3;
+}
+
+.right-column img {
+    max-width: 100%;
+    border-radius: 8px;
+    object-fit: cover;
+}
+.container2 {
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+.container2 .quote {
+    font-size: 1.2em;
+    color: #333;
+    margin-bottom: 20px;
+}
+.container2 .quote a {
+    color: #007bff;
+    text-decoration: none;
+    font-weight: bold;
+}
+.container2 .quote a:hover {
+    text-decoration: underline;
+}
+.container2 {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.content-wrapper2 {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.left-column2 {
+    flex: 1;
+    width: 50%;
+    text-align: left;
+}
+
+.scrum-image {
+    margin: 16px 16px 16px 0px;
+    height: 63.98px;
+    width: 324.66px;
+}
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9;
+    margin: 0;
+    padding: 0;
+}
+ body {
+            font-family: sans-serif;
+        }
+        .container3 {
+            /* add padding to the container */
+            margin-left: 100px; /* adjust the gap here */
+            width: 80%; 
+            padding: 20px;
+            margin: 20px auto;
+            max-width: 300px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        .header {
+            background-color: #007bff;
+            color: white;
+            padding: 15px;
+            border-top-left-radius: 5px;
+            border-top-right-radius: 5px;
+        }
+        .header h2 {
+            margin: 0;
+        }
+        .banner {
+            background-color: #f8f9fa;
+            padding: 10px;
+            margin-bottom: 15px;
+           
+        }
+        .banner {
+            background-color: #f8f9fa;
+            padding: 5px 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+}
+        .banner.preferred {
+            background-color: #ffc107;
+            color: white;
+            border: none;
+}
+        .content {
+            margin-bottom: 15px;
+        }
+        .content ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        .content li {
+            margin-bottom: 10px;
+        }
+        .content li:before {
+            content: '✔';
+            margin-right: 10px;
+            color: #007bff;
+        }
+        .footer {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px;
+            border-bottom-left-radius: 5px;
+            border-bottom-right-radius: 5px;
+        }
+        .footer .discount {
             display: flex;
             align-items: center;
-            margin-bottom: 10px;
-            font-family: Arial, sans-serif;
         }
+        .footer .discount span {
+            font-size: 14px;
+            margin-right: 5px;
+            color: #007bff;
+        }
+        .footer .discount strong {
+            font-size: 16px;
+        }
+        .footer .discount del {
+            font-size: 14px;
+            color: #ccc;
+            margin-left: 5px;
+        }
+        .footer button {
+            background-color: #fd7e14;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .container4 {
+  width: 500px;
+  margin: 0 auto;
+  border: 1px solid #ddd;
+  padding: 20px;
+  background-color: #f2f2f2;
+  text-align: center;
+}
 
-        .checklist li::before {
-            content: '\2714'; /* Unicode character for checkmark */
-            color: green;
-            margin-right: 10px;
-            font-size: 1.2em;
-        }
-    </style>
-            
-            <ul class="checklist">
-                <list >CSM Certification Exam Pass Guaranteed on 1st Attempt</list>
-                <li>Guaranteed to Run 20+ Live Cohorts in a month</li>
-                <li>Gain complimentary access to Agile and Scrum courses worth $500</li>
-                <li>Two-year membership with Scrum Alliance® included</li>
-                <li>Earn 20 PDUs and 16 SEUs | Exam fee included</li>
-            </ul>
-          
-           <img src="img/poster.jpeg" alt="scrum and agile life cycle" style="width: 300px; height:150px; border: 1px solid #ccc; float: right;"/>
-        </div>
-        <div>
-            <button type="button" style="background-color:#117AEF;color:white; width:150px; height:q50px; font-size:16px;" >View Schedules</button>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-            <button type="button" style="background-color:white; color:#117AEF; width:150px; height:50px; font-size:16px;">Talk to our advisor</button>
-        </div>
-        <h3>Want to Train your team? :<a href="">Get a quote</a></h3>
-        <h3>Global REA of Scrum Alliance</h3>
-        <h1>CSM Certification Course Overview</h1>
-        <p>Elevate your career as a sought-after Certified Scrum Master through immersive training by globally renowned CSTs.
-           Uncover Scrum's secrets, enhance teamwork, transparency, and results with CSM certification. Get expert coaching,
-           ace the CSM exam, and propel your career to new heights—unlock higher salaries and discover exciting opportunities!</p>
-        <h1>Key Features</h1>
-        <div>
-             <ul class="checklist">
-                <li>16 hours of live training by globally renowned Certified Scrum Trainers (CSTs)</li>
-                <li>Hands-on learning through games, role-plays, simulations, and case studies</li>
-                <li>Earn a Scrum Alliance certificate with two-year membership</li>
-                <li>Certified ScrumMaster® exam fee included along with a free exam retake</li>
-                <li>16 SEUs and 20 PDUs for your CSM certification</li>
-                 <li>Complimentary access to 15 value addition courses worth $500 | 2 Mock Test Papers</li>
-             </ul>
-                <h1>Skills Covered</h1>
-                <ul class="checklist">
-                    <li>Scrum and Agile Methodologies</li>
-                    <li>Daily Scrum and Review</li>
-                    <li>Importance of Agile</li>
-                    <li>Roles involved in Scrum</li>
-                    <li>Scrum Lifecycle</li>
-                    <li>Distributed Scrum</li>
-                    <li>Scrum Terminologies</li>
+h1 {
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.features {
+  list-style: none;
+  padding: 0;
+  margin-bottom: 20px;
+}
+
+.features li {
+  margin-bottom: 10px;
+}
+
+.features li i {
+  color: #007bff;
+  margin-right: 10px;
+}
+
+.buttons {
+  margin-top: 20px;
+}
+
+.buttons button {
+  background-color: #007bff;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.buttons button:hover {
+  background-color: #0056b3;
+}
+
+
+        </style>
+
+ <div class="container">
+        <div class="content-wrapper">
+            <div class="left-column">
+                <h1>Certified ScrumMaster (CSM) Certification Training</h1>
+                <p>Best Rated Certified Scrum Master Certification</p>
+                <ul>
+                    <li>CSM Certification Exam Pass Guaranteed on 1st Attempt</li>
+                    <li>Guaranteed to Run 20+ Live Cohorts in a month</li>
+                    <li>Gain complimentary access to Agile and Scrum courses worth $500</li>
+                    <li>Two-year membership with Scrum Alliance® included</li>
+                    <li>Earn 20 PDUs and 16 SEUs | Exam fee included</li>
                 </ul>
+                <div class="button-group">
+                    <a href="#" class="btn">View Schedules</a>
+                    <a href="#" class="btn">Talk to our advisor</a>
+                </div>
+            </div>
+            <div class="right-column">
+                <img src="img/women.png" alt="CSM Training">
+            </div>
         </div>
-        <div>
-            <h1>Benefits</h1>
-            <p>Certified ScrumMasters® demonstrate the accomplishment of core Scrum knowledge to employers and are highly-valued
-               across industries since they have verifiable skills. CSM professionals gain access to local groups, networks, and
-               resources available only to Scrum Alliance members.</p>
+    </div>
+
+
+        <div class="container2">
+    <div class="content-wrapper2">
+        <div class="left-column2">
+            <p class="quote">Want to Train your team?: <a href="#">Get a quote</a></p>
+            <p>Global REA of Scrum Alliance</p>
+            <img src="img/CSM.jpg" alt="Scrum Alliance - CSM" class="scrum-image"/>
         </div>
-        
+    </div>
+</div>
+         
+      <div class="container3">
+        <div class="header">
+            <h2>ONLINE BOOTCAMP</h2>
+           
+        </div>
+        <div class="content">
+            <ul>
+                <li>2 days of online virtual training</li>
+                <li>CSM exam fee included</li>
+                <li>Two-year membership with Scrum Alliance® included</li>
+                <li>Delivered by globally acclaimed CSTS</li>
+                <li>Earn PDUs and SEUS</li>
+            </ul>
+            <p><strong>Batch starting from:</strong></p>
+            <p>27th Jun, Weekday Class</p>
+            <p>29th Jun, Weekend Class</p>
+            <a href="#" class="btn">View all schedules</a>
+        </div>
+        <div class="footer">
+            <div class="discount">
+                <span>47% Off</span>
+                <strong>₹15,999</strong>
+                <del>₹29,999</del>
+            </div>
+            <button>Enroll Now</button>
+        </div>
+    </div>
+       <div class="container4">
+  <h1>CORPORATE TRAINING</h1>
+  <p>Upskill or reskill your teams</p>
+  
+  <ul class="features">
+    <li><i>✓</i> Flexible pricing & billing options</li>
+    <li><i>✓</i> Private cohorts available</li>
+    <li><i>✓</i> Training progress dashboards</li>
+    <li><i>✓</i> Skills assessment & benchmarking</li>
+    <li><i>✓</i> Platform integration capabilities</li>
+    <li><i>✓</i> Dedicated customer success manager</li>
+  </ul>
+  
+  <div class="buttons">
+    <button>Know more</button>
+    <button>Contact Us</button>
+  </div>
+</div>
+
     </form>
 </body>
 </html>

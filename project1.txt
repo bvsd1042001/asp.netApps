@@ -5,7 +5,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
     <title></title>
-    <link rel="stylesheet" href="styles.css">
+    
 </head>
 <body>
     <form id="form1" runat="server">
@@ -169,8 +169,7 @@ body {
             /* add padding to the container */
             margin-left: 100px; /* adjust the gap here */
             width: 80%; 
-            padding: 20px;
-            margin: 20px auto;
+           
             max-width: 300px;
             border: 1px solid #ccc;
             border-radius: 5px;
@@ -250,50 +249,52 @@ body {
             border-radius: 5px;
             cursor: pointer;
         }
-        .container4 {
-  width: 500px;
-  margin: 0 auto;
+        
+        .card {
   border: 1px solid #ddd;
-  padding: 20px;
-  background-color: #f2f2f2;
-  text-align: center;
-}
-
-h1 {
-  color: #333;
-  margin-bottom: 20px;
-}
-
-.features {
-  list-style: none;
-  padding: 0;
-  margin-bottom: 20px;
-}
-
-.features li {
-  margin-bottom: 10px;
-}
-
-.features li i {
-  color: #007bff;
-  margin-right: 10px;
-}
-
-.buttons {
-  margin-top: 20px;
-}
-
-.buttons button {
-  background-color: #007bff;
-  color: #fff;
-  padding: 10px 20px;
-  border: none;
   border-radius: 5px;
-  cursor: pointer;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+ 
+  width: 300px;
 }
 
-.buttons button:hover {
-  background-color: #0056b3;
+.card-header {
+  background-color: #ECF4FF;
+  padding: 30px;
+  border-bottom: 1px solid #ddd;
+  
+}
+
+.card-content {
+  padding: 10px;
+  padding-bottom: 100PX;
+
+
+}
+
+.card-footer {
+  background-color: #ECF4FF;
+  padding: 24px;
+  border-top: 1px solid #ddd;
+  text-align: right;
+}
+.btn {
+  border-radius:5px;    
+  color:white; 
+  background-color: #2F80ED;
+  border-radius: 5px;
+  padding: 10px;
+  border:none;
+}
+.card-header p {
+  font-size: 14px;
+  font-family: sans-serif;
+  
+}
+.card-content ul {
+  list-style: none;
+  padding: 10px;
+  margin: 0px;
 }
 
 
@@ -332,11 +333,85 @@ h1 {
         </div>
     </div>
 </div>
-         
-      <div class="container3">
+
+
+
+<style>
+/* CSS */
+.card-container {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+    gap: 0px; /* Add gap between the cards */
+}
+
+.card {
+    flex: 1;
+    margin: 20px;
+    display: flex;
+    flex-direction: column;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    width: calc(50% - 40px); /* Adjust width to ensure proper spacing */
+    max-width: 400px; /* Optional: to ensure cards don't get too wide */
+    height: 100%; /* Set height to ensure cards are the same height */
+}
+
+.header, .card-header {
+    background-color: #f5f5f5;
+    padding: 20px;
+    text-align: center;
+    flex: 0 0 auto;
+}
+
+.header h2, .card-header h5 {
+    margin: 0;
+}
+
+.content {
+    padding: 20px;
+    flex: 1 1 auto;
+}
+
+.footer, .card-footer {
+    padding: 20px;
+    text-align: center;
+    background-color: #f5f5f5;
+    flex: 0 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.discount {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.tick {
+    color: #34c759;
+}
+
+.enroll-btn, .btn {
+    background-color: #1179EF;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.enroll-btn:hover, .btn:hover {
+    background-color: #0a5cbf;
+}
+</style>
+
+<div class="card-container">
+    <div class="card">
         <div class="header">
             <h2>ONLINE BOOTCAMP</h2>
-           
         </div>
         <div class="content">
             <ul>
@@ -344,12 +419,12 @@ h1 {
                 <li>CSM exam fee included</li>
                 <li>Two-year membership with Scrum Alliance® included</li>
                 <li>Delivered by globally acclaimed CSTS</li>
-                <li>Earn PDUs and SEUS</li>
+                <li>Earn PDUs and SEUs</li>
             </ul>
             <p><strong>Batch starting from:</strong></p>
             <p>27th Jun, Weekday Class</p>
             <p>29th Jun, Weekend Class</p>
-            <a href="#" class="btn">View all schedules</a>
+            <a href="#" style="color:#1179EF;">View all schedules</a><br/><br/><br/>
         </div>
         <div class="footer">
             <div class="discount">
@@ -357,28 +432,133 @@ h1 {
                 <strong>₹15,999</strong>
                 <del>₹29,999</del>
             </div>
-            <button>Enroll Now</button>
+            <button class="enroll-btn">Enroll Now</button>
         </div>
     </div>
-       <div class="container4">
-  <h1>CORPORATE TRAINING</h1>
-  <p>Upskill or reskill your teams</p>
-  
-  <ul class="features">
-    <li><i>✓</i> Flexible pricing & billing options</li>
-    <li><i>✓</i> Private cohorts available</li>
-    <li><i>✓</i> Training progress dashboards</li>
-    <li><i>✓</i> Skills assessment & benchmarking</li>
-    <li><i>✓</i> Platform integration capabilities</li>
-    <li><i>✓</i> Dedicated customer success manager</li>
-  </ul>
-  
-  <div class="buttons">
-    <button>Know more</button>
-    <button>Contact Us</button>
-  </div>
-</div>
 
+    <div class="card">
+        <div class="header">
+            <h5>CORPORATE TRAINING</h5>
+            <p>Upskill or reskill your teams</p>
+        </div>
+        <div class="content">
+            <ul>
+                <li><span class="tick">&#10003;</span> Flexible pricing & billing options</li>
+                <li><span class="tick">&#10003;</span> Private cohorts available</li>
+                <li><span class="tick">&#10003;</span> Training progress dashboards</li>
+                <li><span class="tick">&#10003;</span> Skills assessment & benchmarking</li>
+                <li><span class="tick">&#10003;</span> Platform integration capabilities</li>
+                <li><span class="tick">&#10003;</span> Dedicated customer success manager</li>
+            </ul>
+        </div>
+        <div class="footer">
+            <a href="#" style="text-decoration:none; color:#2F80ED; font-size: 16px; font-family:sans-serif;">Know More</a>
+            <button class="btn">Contact Us</button>
+        </div>
+    </div>
+</div>
+        <style>
+
+           .custom-container {
+        display: grid;
+        grid-template-columns: 2fr 1fr 1fr; /* Left column 2/4, two right columns 1/4 each */
+        grid-template-rows: repeat(2, auto); /* Two rows */
+        gap: 20px; /* Adjust the gap as needed */
+        padding: 20px; /* Add padding around the container */
+    }
+
+    .custom-column-left {
+        grid-row: span 2; /* Span two rows */
+        display: flex;
+        align-items: center; /* Center the image vertically */
+        justify-content: center; /* Center the image horizontally */
+        padding: 20px; /* Add some padding around the image */
+    }
+
+    .custom-column-left img {
+        max-width: 100%; /* Ensure the image does not overflow the container */
+        height: auto; /* Maintain aspect ratio */
+    }
+
+    .custom-column-right-top-left,
+    .custom-column-right-top-right,
+    .custom-column-right-bottom-left,
+    .custom-column-right-bottom-right {
+        padding: 20px; /* Add padding around the text */
+    }
+
+    .custom-column-right-top-left h4,
+    .custom-column-right-top-right h4,
+    .custom-column-right-bottom-left h4,
+    .custom-column-right-bottom-right h4 {
+        color: #333; /* Example text color */
+        font-size: 1.25em; /* Example font size */
+    }
+
+    .custom-column-right-top-left p,
+    .custom-column-right-top-right p,
+    .custom-column-right-bottom-left p,
+    .custom-column-right-bottom-right p {
+        color: #666; /* Example text color */
+        font-size: 1em; /* Example font size */
+    }
+
+        </style>
+
+
+     <div class="custom-container">
+    <div class="custom-column-left">
+        <img src="img/bootcamp.png" alt="Bootcamp Image" />
+    </div>
+    <div class="custom-column-right-top-left">
+        <h4>Develop skills for real career growth</h4>
+        <p>Cutting-edge curriculum designed in guidance with industry and academia to develop job-ready skills</p>
+    </div>
+    <div class="custom-column-right-top-right">
+        <h4>Learn by working on real-world problems</h4>
+        <p>Capstone projects involving real world data sets with virtual labs for hands-on learning</p>
+    </div>
+    <div class="custom-column-right-bottom-left">
+        <h4>Learn from experts active in their field, not out-of-touch trainers</h4>
+        <p>Leading practitioners who bring current best practices and case studies to sessions that fit into your work schedule.</p>
+    </div>
+    <div class="custom-column-right-bottom-right">
+        <h4>Structured guidance ensuring learning never stops</h4>
+        <p>24x7 Learning support from mentors and a community of like-minded peers to resolve any conceptual doubts</p>
+    </div>
+</div>
+        <style>
+            .left-column-card {
+            width: 670px;
+            height: 349.02px;
+            border: 2px solid black;
+          
+      }
+            .right-column-card {
+            width: 670px;
+            height: 349.02px;
+            border: 2px solid black;
+            }
+        </style>
+        <div class="card-container1">
+            <div class="left-column-card">
+            <div class="left-profile-image">
+                 <img src="img/Suganth_Rajan.jpeg" alt="Suganth_Rajan" />
+            </div>
+              <div class="left-profile-title">
+                 <h3>Suganth Rajan PN</h3>
+                 <h2>Senior Project Manager</h2>&#9733;&#9733;&#9733;&#9733;&#9733;
+              </div>
+               <div class="left-profile-intro">
+                   <p>I chose Simplilearn for its comprehensive curriculum and blended learning. It was a
+                    great learning experience, combining self-paced learning with classroom training. The 
+                    online material helped me a lot, and I became a Senior Project Manager at Bosch Global
+                    Software Technologies with a 30% salary hike.</p>
+               </div>
+                
+            </div>
+           </div>  
+        
     </form>
 </body>
 </html>

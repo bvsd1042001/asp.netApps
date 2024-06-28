@@ -318,7 +318,7 @@ body {
                 </div>
             </div>
             <div class="right-column">
-                <img src="img/women.png" alt="CSM Training">
+                <img src="img/women.png" alt="CSM Training"/>
             </div>
         </div>
     </div>
@@ -342,24 +342,31 @@ body {
     display: flex;
     justify-content: space-between;
     margin-top: 20px;
-    gap: 0px; /* Add gap between the cards */
+    gap: 20px; /* Adjust gap between the cards */
+    margin-bottom:50px;
+    border:dashed;
+    
+
 }
 
 .card {
     flex: 1;
-    margin: 20px;
+    margin-top:30px;
+    margin-right:100px;
     display: flex;
     flex-direction: column;
     border: 1px solid #ddd;
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-    width: calc(50% - 40px); /* Adjust width to ensure proper spacing */
     max-width: 400px; /* Optional: to ensure cards don't get too wide */
     height: 100%; /* Set height to ensure cards are the same height */
+    border:dashed;
+
 }
 
 .header, .card-header {
     background-color: #f5f5f5;
+    color: black;
     padding: 20px;
     text-align: center;
     flex: 0 0 auto;
@@ -406,25 +413,36 @@ body {
 .enroll-btn:hover, .btn:hover {
     background-color: #0a5cbf;
 }
-</style>
 
+.header h5 {
+    font-size:18px;
+    font-family: sans-serif;
+}
+
+.card {
+    height: 500px;  
+    margin-left:230px;
+}
+</style>
+         <h1 style="text-align:left;">Training Options</h1>
 <div class="card-container">
+   
     <div class="card">
-        <div class="header">
+        <div class="header" style="background-color: #117AEF; text-align:left;">
             <h2>ONLINE BOOTCAMP</h2>
         </div>
         <div class="content">
-            <ul>
+            <ul style="margin-bottom: 20px;">
                 <li>2 days of online virtual training</li>
                 <li>CSM exam fee included</li>
-                <li>Two-year membership with Scrum Alliance® included</li>
+                <li>Two-year membership with Scrum Alliance® &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;included</li>
                 <li>Delivered by globally acclaimed CSTS</li>
                 <li>Earn PDUs and SEUs</li>
             </ul>
-            <p><strong>Batch starting from:</strong></p>
+            <p style="padding-bottom:10px; padding-top:10px;"><strong>Batch starting from:</strong></p>
             <p>27th Jun, Weekday Class</p>
-            <p>29th Jun, Weekend Class</p>
-            <a href="#" style="color:#1179EF;">View all schedules</a><br/><br/><br/>
+            <p>&nbsp; | 29th Jun, Weekend Class</p>
+            <a href="#" style="margin-top: 20px;">View all schedules</a><br/><br/><br/>
         </div>
         <div class="footer">
             <div class="discount">
@@ -438,17 +456,17 @@ body {
 
     <div class="card">
         <div class="header">
-            <h5>CORPORATE TRAINING</h5>
-            <p>Upskill or reskill your teams</p>
+            <h3 style="text-align:left;">CORPORATE TRAINING</h3>
+            <p style="text-align: left">Upskill or reskill your teams</p>
         </div>
         <div class="content">
             <ul>
-                <li><span class="tick">&#10003;</span> Flexible pricing & billing options</li>
-                <li><span class="tick">&#10003;</span> Private cohorts available</li>
-                <li><span class="tick">&#10003;</span> Training progress dashboards</li>
-                <li><span class="tick">&#10003;</span> Skills assessment & benchmarking</li>
-                <li><span class="tick">&#10003;</span> Platform integration capabilities</li>
-                <li><span class="tick">&#10003;</span> Dedicated customer success manager</li>
+                <li>Flexible pricing & billing options</li>
+                <li>Private cohorts available</li>
+                <li>Training progress dashboards</li>
+                <li>Skills assessment & benchmarking</li>
+                <li>Platform integration capabilities</li>
+                <li>Dedicated customer success manager</li>
             </ul>
         </div>
         <div class="footer">
@@ -457,6 +475,13 @@ body {
         </div>
     </div>
 </div>
+
+
+
+
+
+
+
         <style>
 
            .custom-container {
@@ -502,6 +527,7 @@ body {
         color: #666; /* Example text color */
         font-size: 1em; /* Example font size */
     }
+   
 
         </style>
 
@@ -527,38 +553,136 @@ body {
         <p>24x7 Learning support from mentors and a community of like-minded peers to resolve any conceptual doubts</p>
     </div>
 </div>
-        <style>
-            .left-column-card {
-            width: 670px;
-            height: 349.02px;
-            border: 2px solid black;
-          
-      }
-            .right-column-card {
-            width: 670px;
-            height: 349.02px;
-            border: 2px solid black;
-            }
-        </style>
-        <div class="card-container1">
-            <div class="left-column-card">
-            <div class="left-profile-image">
-                 <img src="img/Suganth_Rajan.jpeg" alt="Suganth_Rajan" />
-            </div>
-              <div class="left-profile-title">
-                 <h3>Suganth Rajan PN</h3>
-                 <h2>Senior Project Manager</h2>&#9733;&#9733;&#9733;&#9733;&#9733;
-              </div>
-               <div class="left-profile-intro">
-                   <p>I chose Simplilearn for its comprehensive curriculum and blended learning. It was a
-                    great learning experience, combining self-paced learning with classroom training. The 
-                    online material helped me a lot, and I became a Senior Project Manager at Bosch Global
-                    Software Technologies with a 30% salary hike.</p>
-               </div>
-                
-            </div>
-           </div>  
-        
+    <style>
+.employees-profile-container {
+  width: 100%; /* Adjusted width */
+  background-color: #ebf1f8;
+  padding: 20px; /* Adds padding inside the container */
+  display: flex;
+  flex-direction: column; /* Display items in a column */
+  gap: 20px; /* Gap between grid items */
+}
+
+.profile-cards {
+  display: flex;
+  gap: 20px;
+}
+
+.profile-card {
+  border: 2px solid black;
+  border-radius: 5px;
+  flex: 1; /* Each profile card takes equal space */
+  padding: 20px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.profile-image img {
+  border: 2px solid black;
+  border-radius: 50%;
+  width: 150px;
+  height: 150px;
+  overflow: hidden;
+  margin: 0 auto;
+}
+
+.profile-content {
+  margin-top: 20px;
+  text-align: center;
+}
+
+.profile-title {
+  margin: 0;
+}
+.stars {
+    color: gold;
+}
+</style>
+
+<div class="employees-profile-container">
+  <h1 style="text-align: left;">CSM Certification Reviews</h1>
+  <div class="profile-cards">
+    <div class="profile-card">
+      <div class="profile-image">
+        <img src="img/Suganth_Rajan.jpeg" alt="Suganth Rajan" />
+      </div>
+      <div class="profile-content">
+        <div class="profile-title">
+          <h3>Suganth Rajan PN</h3>
+          <h2>Senior Project Manager</h2>
+          <span class="stars">&#9733;&#9733;&#9733;&#9733;&#9733;</span>
+        </div>
+        <div class="profile-intro">
+          <p>
+            I chose Simplilearn for its comprehensive curriculum and blended learning. It was a great learning experience, combining self-paced learning with classroom training. The online material helped me a lot, and I became a Senior Project Manager at Bosch Global Software Technologies with a 30% salary hike.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <div class="profile-card">
+      <div class="profile-image">
+        <img src="img/111Gadwala.jpeg" alt="Sudhamanohar Gadwala" />
+      </div>
+      <div class="profile-content">
+        <div class="profile-title">
+          <h3>Sudhamanohar Gadwala</h3>
+          <h2>Manager - Business Analyst</h2>
+          <span class="stars">&#9733;&#9733;&#9733;&#9733;&#9733;</span>
+        </div>
+        <div class="profile-intro">
+          <p>
+            The certifications helped me in two ways: they gave me better opportunities internally and also got me the best offers from other companies. I was promoted to Lead Business Analyst, and now I work with Trianz as a Manager-Business Analyst.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<style>
+.main-container {
+    height:8200px;
+    width :1098px;
+    border-style:solid;
+    padding: 20px;
+    box-si
+}
+.course-heading-container {
+    height:38px;
+    width:546px;
+    border-style:solid;
+}
+.course-heading-container h2 {
+    font-size:32px;
+    font-family:sans-serif;
+    color: #272c37;
+}
+.course-heading-container b {
+    height:131.38px;    
+    width:38px;
+    border-style:solid;
+    font-size:32px;
+    font-family: sans-serif;
+}
+.course-descrption-container 
+    {
+    height: 88px;
+    width: 588px;
+    border-style:solid;
+}
+</style>
+<div class="main-container">
+    <div class="course-heading-container">
+        <h2>CSM Certification Course<b>Overview</b></h2>
+    </div>
+</div>
+        <div class="course-descrption-container">
+            <p>Elevate your career as a sought-after Certified Scrum Master through immersive training by globally renowned CSTs. Uncover Scrum's secrets, enhance
+                teamwork, transparency, and results with CSM certification. Get expert coaching, ace the CSM exam, and propel your career to new heights—unlock 
+                higher salaries and discover exciting opportunities!</p>
+        </div>
     </form>
 </body>
 </html>
